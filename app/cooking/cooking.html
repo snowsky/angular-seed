@@ -1,0 +1,19 @@
+<html ng-app="myApp.Cooking" ng-controller="CookingCtrl">
+<body>
+  <form>
+    Username:
+    <input ng-model="user.name"/>
+    <br>
+    Password:
+    <input ng-model="user.password"/>
+    <br>
+    email:
+    <input ng-model="user.email"/>
+    <br>
+    <input type="submit" ng-click="addUser(user)" value="Register"/>
+  </form>
+
+  <li> {{user | json}}</li>
+</body>
+</html>
+
