@@ -14,7 +14,6 @@
     <input type="submit" ng-click="showUser(user)" value="Show"/>
   </form>
 
-  <li ng-repeat="user in users">{{ user | json}}</li>
+  <li ng-repeat="user in users track by $index">{{ user | json}}</li>
 </body>
 </html>
-
