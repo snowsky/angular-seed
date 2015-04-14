@@ -1,4 +1,4 @@
-<html ng-app="cooking" ng-controller="CookingCtrl">
+<html ng-app="cooking">
 <body>
   <form>
     Username:
@@ -11,9 +11,10 @@
     <input ng-model="user.email"/>
     <br>
     <input type="submit" ng-click="addUser(user)" value="Register"/>
-    <input type="submit" ng-click="showUser(user)" value="Show"/>
+    <input type="submit" ng-click="resetUser(user)" value="Reset"/>
   </form>
 
-  <li ng-repeat="user in users track by $index">{{ user | json}}</li>
+  <li ng-controller="CookingRegisterCtrl" ng-repeat="user in users track by $index">{{ user | json}}</li>
+  <h1 ng-controller="mainController">{{ var }}</h1>
 </body>
 </html>

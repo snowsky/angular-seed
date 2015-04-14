@@ -13,5 +13,6 @@ config(['$routeProvider', function($routeProvider) {
 */
 angular.module('cooking', ['ngRoute', 'cooking']).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/register'});
+  $routeProvider
+  .otherwise({redirectTo: '/register'});
 }]);
