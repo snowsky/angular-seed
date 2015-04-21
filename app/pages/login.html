@@ -1,0 +1,240 @@
+<html>
+
+<!-- <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+    Latest compiled and minified CSS
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    Optional theme
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    
+    start Mixpanel
+    <script type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var a, e, i, g;
+                window.mixpanel = b;
+                b._i = [];
+                b.init = function (a, e, d) {
+                    function f(b, h) {
+                        var a = h.split(".");
+                        2 == a.length && (b = b[a[0]], h = a[1]);
+                        b[h] = function () {
+                            b.push(
+                               [h].concat(Array.prototype.slice.call(arguments, 0))
+                            )
+                        }
+                    }
+                    var c = b;
+                    "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+                    c.people = c.people || [];
+                    c.toString = function (b) {
+                        var a = "mixpanel";
+                        "mixpanel" !== d && (a += "." + d);
+                        b || (a += " (stub)");
+                        return a
+                    };
+                    c.people.toString = function () {
+                        return c.toString(1) + ".people (stub)"
+                    };
+                    i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (g = 0; g < i.length; g++)
+                        f(c, i[g]);
+                    b._i.push([a, e, d])
+                };
+                b.__SV = 1.2;
+                a = f.createElement("script");
+                a.type = "text/javascript";
+                a.async = !0;
+                a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+                e = f.getElementsByTagName("script")[0];
+                e.parentNode.insertBefore(a, e)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("693320aaf8099b602d2b793097684ca3");
+    </script>
+    end Mixpanel
+</head> -->
+
+<body>
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="tab-content">
+                <div class="tab-pane " id="login">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Login</h4>
+                    </div>
+
+                    <form name="form" rel="async" id="login_form" method="post" accept-charset="utf-8">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-7">
+                                    <div id="login-error"></div>
+                                    <div class="form-group">
+                                        Email:
+                                        <input type="text" name="identity" id="identity" class="form-control" placeholder="Email" ng-model="email" required autofocus> </div>
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <div class="form-group">
+                                                Password:
+                                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" ng-model="password" required> </div>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="form-group">
+                                                <label for="submit">&nbsp;</label>
+
+                                                <input type="hidden" name="location" value="">
+                                                <input type="submit" name="submit" value="Login" ng-click="login(email, password)" class="btn btn-primary form-control" /> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="checkbox" name="remember" value="1" id="remember"> Remember me · <a href="#forgot_password" role="tab" data-toggle="tab">Forgot your password?</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5">
+                                    <br>
+                                    <h4 class="modal-title text-center">New to ...?</h4>
+
+                                    <p class="text-center">
+                                        <br>
+
+                                        <input type="hidden" name="location" value="">
+                                        <a href="#sign_up" class="btn btn-lg btn-success" role="tab" data-toggle="tab">
+                            Sign Up                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane active" id="sign_up">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">New to ...? Sign up</h4>
+                    </div>
+
+                    <form action="#" rel="async" id="signup_form" method="post" accept-charset="utf-8">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div id="signup-error"></div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                First Name:
+                                                <input type="text" name="first_name" value="" id="first_name" class="form-control" placeholder="First Name"> </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                Last Name:
+                                                <input type="text" name="last_name" value="" id="last_name" class="form-control" placeholder="Last Name"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        Email:
+                                        <input type="text" name="email" value="" id="email" class="form-control" placeholder="Email"> </div>
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <div class="form-group">
+                                                Password:
+                                                <input type="password" name="password" value="" id="password" class="form-control" placeholder="Password"> </div>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="form-group">
+                                                <label for="submit">&nbsp;</label>
+                                                <input type="submit" name="submit" value="Sign Up" class="btn btn-primary form-control">
+                                                <input type="hidden" name="location" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-right">
+                                        Already have an account? <a href="#login" role="tab" data-toggle="tab">Login</a>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="checkbox" name="pref_daily_menu" value="1" id="pref_daily_menu" checked="">
+                                                <label for="" "pref_daily_menu"="">Receive Daily Menu</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <input type="checkbox" name="pref_newsletter" value="1" id="pref_newsletter" checked="">
+                                                <label for="" "pref_newsletter"="">Receive Newsletter</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-pane" id="forgot_password">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Forgot Password</h4>
+                    </div>
+
+                    <form action="#/forgot_password" rel="async" id="forgot_password_form" method="post" accept-charset="utf-8">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div id="forgotpassword-error"></div>
+
+
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    Email Address:
+                                                    <input type="text" name="email" value="" id="email" class="form-control" placeholder="Email"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="form-group">
+                                                <label for="submit">&nbsp;</label>
+                                                <input type="submit" name="submit" value="Submit" class="btn btn-primary form-control">
+                                                <input type="hidden" name="location" value="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="text-right">
+                                        Back to <a href="#login" role="tab" data-toggle="tab">login</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--
+<script>
+    mixpanel.track_forms("#login_form", "Logged In");
+    mixpanel.track_forms("#signup_form", "Signed Up");
+    mixpanel.track_forms("#forgot_password_form", "Requested Password Reset");
+</script>
+-->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+
+</body>
+
+</html>

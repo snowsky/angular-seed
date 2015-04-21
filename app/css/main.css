@@ -1,0 +1,489 @@
+
+/* FM Styles */
+
+h1 {
+    color: #193d67;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+h2 {
+    color: #193d67;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+h3 {
+    color: #7f97b3;
+    font-family: "Roboto";
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+h4 {
+    color: #1e4764;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+p {
+    color: #4d5d70;
+}
+/* Nav Bar */
+
+#main-nav {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    margin-bottom: 5px;
+}
+#main-nav .navbar-brand {
+    color: #1e4764;
+    margin-top: -2px;
+    margin-bottom: 2px;
+}
+#main-nav .navbar-brand:hover, #main-nav .navbar-brand:focus {
+    color: #1caed9;
+}
+#main-nav .navbar-text {
+    color: #1e4764;
+}
+#main-nav a {
+    color: #1e4764;
+    margin-top: 5px;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#main-nav .navbar-header .toggle-links {
+    margin-top: 10px;
+}
+
+#main-nav a.order {
+    padding-right: 0px;
+}
+
+#main-nav a:hover, #main-nav a:focus {
+    color: #1caed9;
+    background-color: #ffffff;
+}
+#main-nav .navbar-toggle {
+    border-color: #ffffff;
+}
+#main-nav .navbar-toggle:hover, #main-nav .navbar-toggle:focus {
+    background-color: #ffffff;
+}
+#main-nav .navbar-toggle .icon-bar {
+    background-color: #1e4764;
+}
+#main-nav .navbar-collapse,
+#main-nav .navbar-form {
+    border-color: #1e4764;
+    margin-top: 10px;
+}
+#main-nav .navbar-link {
+    color: #1e4764;
+}
+#main-nav .navbar-link:hover {
+    color: #1caed9;
+}
+
+#main-nav a.navbar-brand { 
+    background: url('/assets/img/fm-logo.png') no-repeat;
+    background-size: 222px 50px;
+    width: 222px;
+    height: 50px;
+}
+
+#main-nav a.login {
+    border: 1px solid #83bd78;
+    border-radius: 0.3rem;
+    color: #83bd78;
+    font-weight: 300;
+    margin: 0.2em 1rem 0;
+}
+#main-nav a.signup {
+    border: 1px solid #64ac56;
+    border-radius: 0.3rem;
+    background-color: #83bd78;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0.2em 1rem 0 1rem;
+}
+#main-nav a.signup:hover, #main-nav a.signup:focus {
+    background-color: #83bd78;
+}
+
+@media (max-width: 767px) {
+    #main-nav a.navbar-brand { 
+        background: url('/assets/img/fm-mark.svg') no-repeat;
+        background-size: 50px 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+
+
+
+/* CTA */
+
+#cta {
+    background-color: #1c415c;
+    border-top: 1px solid #183950;
+    border-bottom: 1px solid #183950;
+    text-align: center;
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    padding: 5rem 0 5rem 0;
+}
+
+#cta .btn {
+    padding: 1rem 1.5rem;
+    border: 1px solid #64ac56;
+    background-color: #83bd78;
+    color: #ffffff;
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    font-family: "Roboto";
+    font-weight: 300;    
+}
+
+/* Footer */
+
+#footer {
+    padding: 5rem 0 3rem 0;
+    background-color: #1e4764;
+    color: rgba(255,255,255,0.35);
+    font-weight: 300;
+}
+#footer .copyright {
+    text-align: center;
+    padding-top: 25px;
+}
+#footer .copyright a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.35);
+    border-bottom: 1px solid rgba(255,255,255,0.35); 
+}
+#footer .copyright a:hover {
+    color: rgba(255,255,255,0.55);
+}
+
+#footer .title {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: .5rem;
+}
+#footer ul li {
+    font-weight: 300;
+    padding: .5rem 0;
+    font-size: 1.4rem;
+    
+}
+#footer ul li a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: rgba(255,255,255,0.35);
+}
+#footer ul li a:hover {
+    color: rgba(255,255,255,0.55);
+}
+
+#footer .social a {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+/* Homepage */
+#welcome {
+    background: url('/assets/img/hero-bg-2.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    height: 100%;
+
+}
+#hero-unit {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+#welcome h1 {
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Roboto Slab';
+    font-size: 42px;
+}
+
+#welcome  h2 {
+    color: #83bd78;
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-size: 24px;
+}
+
+
+#hero-how {
+    padding: 1.2rem 3.5rem;
+    width: 20rem;
+    border: 1px solid #83bd78;
+    background-color: rgba(0,0,0,0.4);
+    color: #83bd78;
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 10rem 1rem 0 0;
+}
+
+#hero-order {
+    padding: 1.2rem 3.5rem;
+    min-width: 20rem;
+    border: 1px solid #64ac56;
+    background-color: #83bd78;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 6rem;
+}
+
+/* Product Page */
+#product-body {
+    padding: 2rem 0;
+    font-weight: 300;
+}
+#chef, #delivery-information {
+    padding: 5rem 0 3rem 0;
+    font-weight: 300;
+    text-align: center;
+}
+#delivery-information {
+    background-color: #eaf3f5;
+    border-top: 1px solid #dce7e8;
+    border-bottom: 1px solid #dce7e8;
+}
+#chef {
+    background-color: #ffffff;
+}
+#product-body .price {
+    font-size: 45px;
+    line-height: 1.33;
+    color: #7f97b3;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+#product-body .price-dollar {
+    font-size: 33px;
+    font-family: 'Roboto';
+}
+#product-body .qty_change {
+    height: 59px; 
+    font-size: 24px;
+    line-height: 1.33;
+    border: 3px solid #f0ad4e; 
+    border-radius: 0px; 
+    padding-bottom: 4px;
+}
+#product-body .qty_input {
+    height: 59px;
+    font-size: 30px;
+    line-height: 1.33;
+    text-align: center; 
+    width: 60px; 
+    color: #193d67; 
+    border: solid #dddddd;
+    font-family: 'Roboto';
+}
+#product-body h1 {
+    color: #193d67;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+#product-body h2, #chef h2, #delivery-information h2 {
+    color: #193d67;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+#product-body h3, #chef h3, #delivery-information h3 {
+    color: #7f97b3;
+    font-family: "Roboto";
+    font-weight: 300;
+    margin-bottom: 4rem;
+}
+#product-body h4, #chef h4, #delivery-information h4 {
+    color: #1e4764;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+#chef p {
+    font-size: +2rem;
+    color: #4d5d70;
+    line-height: 1.75;
+}
+#delivery-information p {
+    font-size: +1.75rem;
+    color: #4d5d70;
+    line-height: 1.75;
+}
+#delivery-information .well {
+    background-color: #ffffff;
+    min-height: 150px;
+}
+
+#product-image {
+    padding-right: 20px;
+}
+@media (max-width: 767px) {
+    #delivery-information p {
+        font-size: +1.5rem;
+        line-height: 1.5;
+    }
+
+    #delivery-information .well {
+        min-height: 120px;
+    }
+
+    #product-image {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+#opening-hours {
+    padding: 1.5rem 0 0.5rem 0;
+    background-color: #1e4764;
+    text-align: center;   
+}
+#opening-hours p {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 300; 
+}
+
+#mini-shopping-cart {
+    padding: 1.5rem 0 0.5rem 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 300;    
+}
+
+#landing {
+    background: url('/assets/img/hero-bg-2.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+}
+#hero-unit {
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+#landing h1 {
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Roboto Slab';
+    font-size: 42px;
+}
+
+#landing  h2 {
+    color: #83bd78;
+    font-weight: 300;
+    font-family: 'Roboto';
+    font-size: 24px;
+}
+
+#landing  h4 {
+    color: #ffffff;
+}
+
+#landing .form-group {
+    color: #ffffff;
+}
+/* Spinner */
+
+.spinner {
+  width: 70px;
+  min-width: 60px;
+}
+.spinner input {
+  text-align: right;
+}
+.input-group-btn-vertical {
+  position: relative;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+  display: table-cell;
+}
+.input-group-btn-vertical > .btn {
+  display: block;
+  float: none;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px;
+  margin-left: -1px;
+  position: relative;
+  border-radius: 0;
+}
+.input-group-btn-vertical > .btn:first-child {
+  border-top-right-radius: 4px;
+}
+.input-group-btn-vertical > .btn:last-child {
+  margin-top: -2px;
+  border-bottom-right-radius: 4px;
+}
+.input-group-btn-vertical i{
+  position: absolute;
+  top: 0;
+  left: 4px;
+}
+
+/* FORM */
+
+.form-group.required .control-label:before{
+   color: red;
+   content: "*";
+   position: absolute;
+   margin-left: -15px;
+   font-family: 'FontAwesome';
+    font-weight: normal;
+    font-size: 10px;
+    content: "\f069";
+}
+
+/* PACE PROGRESS BAR */
+
+.pace .pace-progress {
+  background: #29d;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  height: 2px;
+
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+/* END PACE PROGRESS BAR */

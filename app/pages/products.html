@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cooking" ng-controller="CookingProductsCtrl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FreshMint - Montreal Food Delivery</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Extra metadata -->
+    <!-- / -->
+
+    <!-- favicon.ico and apple-touch-icon.png -->
+
+    <!-- Bootstrap core CSS -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,300|Roboto:400,500,300,300italic,400italic,500italic' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.freshmint.com/assets/css/bootstrap.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="https://www.freshmint.com/assets/css/main.css">
+    <link rel="stylesheet" href="https://www.freshmint.com/assets/css/bootstrapValidator.min.css">
+    <!-- / -->
+
+    <body>
+        <div id="product-body">
+            <div class="container">
+                <script>
+                    mixpanel.track('Show Menu', {
+                        'page name': 'Show Menu',
+                        'url': window.location.pathname,
+                    });
+                </script>
+                <div class="row">
+                    <h1>We are currently closed</h1>
+                    <h2>Please come back during our opening hours.</h2>
+                </div>
+
+                <script type="text/javascript">
+                    mixpanel.track_links("a#checkout_logged_in", "Confirmed Cart", {
+                        "referrer": document.referrer
+                    });
+                    mixpanel.track_links("a#checkout_no_login", "Confirmed Cart Without Account", {
+                        "referrer": document.referrer
+                    });
+                </script>
+            </div>
+        </div>
+        <div id="delivery-information">
+            <div class="container">
+                <div class="row">
+                    <h2>Delivery Information</h2>
+                    <h3>Gourmet meals delivered right to your door</h3>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="well">
+                            <p>We will deliver your meal 30-45 mins after you place your order</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="well">
+                            <p>We will call you a few minutes before we arrive.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="well">
+                            <p>Please meet our driver at your door or lobby when they arrive.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <div class="well">
+                            <p>Tips are included in the price. Exceptional service at no extra cost.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div id="chef">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Our Wonderful Chef</h2>
+        <h3>Marco Barone</h3>
+     
+        <img class="img-circle" width="250" height="250" src="https://www.freshmint.com/assets/img/chef-marco-barone.jpg">
+      </div>
+      <div class="col-xs-10 col-xs-offset-1 col-lg-6 col-lg-offset-3">
+        <p>Your meal is prepared by Chef Marco Barone in our Old Port kitchen. Marco was classically trained in French Cuisine at the ITHQ and was an apprentice at the Boxwood Café by Gordon Ramsay in London. Marco’s experience includes Head Chef positions at Hostaria and Vinizza.</p>
+      </div>
+    </div>
+  </div>
+</div>-->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-3">
+                        <ul class="list-unstyled">
+                            <li class="title">Company</li>
+                            <li><a href='https://www.freshmint.com/en/content/about'>About Us</a>
+                            </li>
+                            <li><a href='https://www.freshmint.com/en/content/press'>Press</a>
+                            </li>
+                            <!-- <li><a href='https://www.freshmint.com/en/content/jobs'>Jobs</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <ul class="list-unstyled">
+                            <li class="title">Services</a>
+                            </li>
+                            <li><a href='https://www.freshmint.com/en/products'>Order Food Online</a>
+                            </li>
+                            <li><a href='https://www.freshmint.com/en/checkout/membership'>Membership</a>
+                            </li>
+                            <li><a href='https://www.freshmint.com/en/content/catering_and_events'>Catering / Events</a>
+                            </li>
+                            <li><a href='https://www.freshmint.com/en/content/corporate_programs'>Corporate Programs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <ul class="list-unstyled">
+                            <li class="title">Help</li>
+                            <li><a href='https://www.freshmint.com/en/content/how_it_works'>How it Works</a>
+                            </li>
+                            <li><a href='https://www.freshmint.com/en/content/faq'>FAQ</a>
+                            </li>
+                            <li><a href='https://www.freshmint.com/en/content/contact'>Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-sm-3">
+                        <ul class="list-unstyled">
+                            <li class="title">Connect</li>
+                            <li><a href='http://blog.freshmint.com/' target="_blank">Blog / Weekly menu</a>
+                            </li>
+                            <li><a href='https://twitter.com/getfreshmint' target="_blank">Twitter</a>
+                            </li>
+                            <li><a href='https://www.facebook.com/maisonfreshmint' target="_blank">Facebook</a>
+                            </li>
+                            <li><a href='http://instagram.com/maisonfreshmint/' target="_blank">Instagram</a>
+                            </li>
+                            <li class="social"><a href="http://montrealcollective.com/" target="_blank">Made in montreal</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="copyright">&copy; 2013–2015 Maison FreshMint Inc. <a href="https://www.freshmint.com/en/content/terms_and_conditions">Terms and Conditions</a> & <a href="https://www.freshmint.com/en/content/privacy_policy">Privacy Policy</a>.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="copyright">
+                            <a href="https://mixpanel.com/f/partner"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_light.png" alt="Mobile Analytics" />
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

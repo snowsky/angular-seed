@@ -3,15 +3,18 @@
 var cooking = angular.module('cooking', ['ngRoute', 'ngCookies']);
 
 cooking.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/login', {
+    templateUrl: 'main.html',
+    controller: 'CookingLoginCtrl'
+  })
   $routeProvider.when('/register', {
-    templateUrl: 'cooking/register.html',
+    templateUrl: 'cooking/main.html',
     controller: 'CookingRegisterCtrl'
   })
   .when('/register/:var', {
-    templateUrl: 'cooking/register.html',
+    templateUrl: 'cooking/main.html',
     controller: 'mainController'
   });
-
 }]);
 
 cooking.controller('CookingRegisterCtrl', ['$scope', '$log', function ($scope, $log) {
@@ -26,6 +29,14 @@ cooking.controller('CookingRegisterCtrl', ['$scope', '$log', function ($scope, $
     user.email = '';
     console.log(user.name);
   };
+}]);
+
+cooking.controller('CookingLoginCtrl', ['$scope', '$log', function ($scope, $log) {
+    $scope.login = function (user) {
+        email = $scope.user.email;
+        passowrd = $scope.user.password;
+        console.log(email + ' ' + password);
+    }
 }]);
 
 cooking.controller('mainController', ['$scope', '$log', '$routeParams', function($scope, $log, $routeParams) {
